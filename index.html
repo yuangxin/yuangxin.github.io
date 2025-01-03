@@ -50,25 +50,25 @@
             </li>
         </ul>
         
-        <!-- 选项卡内容 -->
-        <div class="tab-content" id="predictionTabsContent">
-            <!-- LSTM Prediction -->
-            <div class="tab-pane fade show active" id="lstm" role="tabpanel" aria-labelledby="lstm-tab">
-                <h3>LSTM Prediction</h3>
-                <img src="{{ url_for('static', filename='lstm.png') }}" alt="LSTM Prediction">
-            </div>
-            <!-- PCA-LSTM Prediction -->
-            <div class="tab-pane fade" id="pca-lstm" role="tabpanel" aria-labelledby="pca-lstm-tab">
-                <h3>PCA-LSTM Prediction</h3>
-                <img src="{{ url_for('static', filename='pca-lstm.png') }}" alt="PCA-LSTM Prediction">
-            </div>
-            <!-- Prediction Plot -->
-            <div class="tab-pane fade" id="prediction-plot" role="tabpanel" aria-labelledby="prediction-plot-tab">
-                <h3>Prediction Plot</h3>
-                <img src="{{ url_for('static', filename='prediction_plot.png') }}" alt="Prediction Plot">
-            </div>
-        </div>
-        
+<!-- 选项卡内容 -->
+<div class="tab-content" id="predictionTabsContent">
+    <!-- LSTM Prediction -->
+    <div class="tab-pane fade show active" id="lstm" role="tabpanel" aria-labelledby="lstm-tab">
+        <h3>LSTM Prediction</h3>
+        <img src="static/lstm.png" alt="LSTM Prediction">
+    </div>
+    <!-- PCA-LSTM Prediction -->
+    <div class="tab-pane fade" id="pca-lstm" role="tabpanel" aria-labelledby="pca-lstm-tab">
+        <h3>PCA-LSTM Prediction</h3>
+        <img src="static/pca-lstm.png" alt="PCA-LSTM Prediction">
+    </div>
+    <!-- Prediction Plot -->
+    <div class="tab-pane fade" id="prediction-plot" role="tabpanel" aria-labelledby="prediction-plot-tab">
+        <h3>Prediction Plot</h3>
+        <img src="static/prediction_plot.png" alt="Prediction Plot">
+    </div>
+</div>
+
 
         <!-- 引入 Bootstrap JS 和依赖的 Popper.js -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
