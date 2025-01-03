@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Source</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+        .data-source-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 18px;
+        }
+        .data-source-list li {
+            margin-bottom: 15px;
+        }
+        .back-link {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .nav-pills {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>PCA-LSTM Apple Futures Price Prediction - Data Source</h1>
+
+<!-- 内容部分 -->
+<div class="content">
+    <p>Our data comes from several reliable sources to ensure accuracy and credibility for predictions.</p>
+
+    <ul class="data-source-list">
+        <li><strong>Apple Futures Price Data</strong>: The historical Apple futures prices were sourced from the financial database, selecting the AP0 Apple continuous contract. <a href="https://quote.cfi.cn/quote144793_ap0.html" target="_blank">web_index</a>.</li>
+        <li><strong>Volume Data</strong>: The volume of Apple futures contracts traded was sourced from <a href="https://choice.eastmoney.com/" target="_blank">web_index</a>.</li>
+        <li><strong>Temperature and Weather Data</strong>: Data related to weather conditions was collected from <a href="https://weather.cma.cn/" target="_blank">web_index</a>.</li>
+        <li><strong>Other influencing factors</strong>: such as international crude oil prices and the offshore RMB exchange rate, were downloaded from the Investing.com website <a href="https://cn.investing.com/" target="_blank">web_index</a>.</li>
+    </ul>
+
+    <p>These datasets are pre-processed and used in conjunction to create a comprehensive model for price prediction.</p>
+</div>
+
+    <!-- 添加导航栏 -->
+    <nav>
+        <ul class="nav nav-pills justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Index</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="data.html">Data</a>
+            </li>
+        </ul>
+    </nav>
+
+<!-- 引入 Bootstrap JS 和依赖的 Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
