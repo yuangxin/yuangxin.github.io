@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LSTM Prediction</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            max-width: 80%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <body>
+
+        <h1>Predicted Results</h1>
+        <p>Here are the predicted future values based on different models:</p>
+        <p>As shown in the following figures, the PCA-LSTM model fits significantly better than the LSTM model. Below are the visualization results:</p>
+        <!-- 创建选项卡 -->
+        <ul class="nav nav-tabs" id="predictionTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="lstm-tab" data-toggle="tab" href="#lstm" role="tab" aria-controls="lstm" aria-selected="true">LSTM Prediction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="pca-lstm-tab" data-toggle="tab" href="#pca-lstm" role="tab" aria-controls="pca-lstm" aria-selected="false">PCA-LSTM Prediction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="prediction-plot-tab" data-toggle="tab" href="#prediction-plot" role="tab" aria-controls="prediction-plot" aria-selected="false">Prediction Plot</a>
+            </li>
+        </ul>
+        
+        <!-- 选项卡内容 -->
+        <div class="tab-content" id="predictionTabsContent">
+            <!-- LSTM Prediction -->
+            <div class="tab-pane fade show active" id="lstm" role="tabpanel" aria-labelledby="lstm-tab">
+                <h3>LSTM Prediction</h3>
+                <img src="{{ url_for('static', filename='lstm.png') }}" alt="LSTM Prediction">
+            </div>
+            <!-- PCA-LSTM Prediction -->
+            <div class="tab-pane fade" id="pca-lstm" role="tabpanel" aria-labelledby="pca-lstm-tab">
+                <h3>PCA-LSTM Prediction</h3>
+                <img src="{{ url_for('static', filename='pca-lstm.png') }}" alt="PCA-LSTM Prediction">
+            </div>
+            <!-- Prediction Plot -->
+            <div class="tab-pane fade" id="prediction-plot" role="tabpanel" aria-labelledby="prediction-plot-tab">
+                <h3>Prediction Plot</h3>
+                <img src="{{ url_for('static', filename='prediction_plot.png') }}" alt="Prediction Plot">
+            </div>
+        </div>
+        
+        
+<!-- 返回主页的链接 -->
+<div class="back-link">
+    <p><a href="/">Back to Homepage</a></p>
+</div>
+
+        <!-- 引入 Bootstrap JS 和依赖的 Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        </body>
+        
